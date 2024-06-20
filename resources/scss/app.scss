@@ -1,0 +1,121 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.project-show{
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.2rem;
+        padding-top: 1rem;
+    }
+}
+
+.dashboard-projects{
+    .card{
+        width: 300px;
+        height: 150px;
+        background: white;
+        border-radius: 20px;
+        margin: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+
+
+        .title{
+            font-size: 1.4rem;
+            max-width: 18ch;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: wrap;
+            text-align: left;
+            width: 100%;
+        }
+
+        .mais-informacoes{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            padding-right: 1rem;
+
+            .client{
+                max-width: 100px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: inline-block;
+            }
+        }
+
+    }
+}
+
+.projects-view{
+
+    width: max-content;
+    margin: 0 auto;
+
+    .btn-projects-view{
+        background-color: #159215;
+        color: white;
+        display: inline-block;
+        border-radius: 12px;
+        padding: 0.6rem 1rem;
+        margin: 3rem 0 1rem;
+    }
+    .projects-container{
+
+        width: max-content;
+        margin: 0 auto;
+
+        h1{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #808080a1;
+        }
+
+        .table-projects{
+
+            border-top: 1px solid rgba(128, 128, 128, 0.631372549);
+
+            tr{
+
+                th{
+                    padding-block: 1rem;
+                    padding-left: 1.25rem;
+                }
+
+            }
+
+            td{
+                padding: 0.8rem 1.25rem 1.5rem 1.25rem;
+                border-bottom: 1px solid #808080a1;
+                border-top: 1px solid #808080a1;
+
+                .btn-edit{
+                    background: #3A9BDC;
+                    color: white;
+                    padding: 0.5rem 1rem;
+                    border-radius: 5px;
+
+                }
+
+                .btn-delete{
+                    background: #d93a3a;
+                    color: white;
+                    padding: 0.5rem 1rem;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+}

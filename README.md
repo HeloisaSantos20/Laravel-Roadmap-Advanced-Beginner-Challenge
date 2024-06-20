@@ -1,79 +1,106 @@
 # Laravel Roadmap: Advanced Beginner Level Challenge
 
-This is a task for the [Advanced Beginner Level of the Laravel Roadmap](https://github.com/LaravelDaily/Laravel-Roadmap-Learning-Path#advanced-beginner-level), with the goal to implement as many of its topics as possible.
+Este repositório contém minha implementação do Advanced Beginner Level Challenge Laravel. O objetivo deste projeto é cobrir o maior número possível de tópicos listados no desafio, proporcionando uma compreensão prática e aprofundada das funcionalidades do Laravel.
 
-This repository is intentionally empty, with only a Readme file. Your task if to submit a Pull Request with your version of implementing the task, and your PR may be reviewed by someone on our team, or other volunteers.
+## Índice
 
-## The Task: Simple CRM System for Managing Clients
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Funcionalidades Implementadas](#funcionalidades-implementadas)
+- [Pré-requisitos](#pre-requisitos)
+- [Instalação](#instalacao)
+- [Como Usar](#como-usar)
+- [Construído com](#construido-com)
 
-You should create an adminpanel-like system to manage Clients, Projects, Tasks with CRUD operations.
+## Sobre o Projeto
 
-A few screenshots from the example solution:
+Este projeto foi criado para demonstrar o conhecimento e a aplicação prática dos conceitos do Laravel em um nível iniciante avançado. A implementação abrange diversos tópicos essenciais para o desenvolvimento de aplicações web robustas usando o Laravel.
 
-<img width="1370" alt="Screenshot 2021-08-12 at 10 56 42" src="https://user-images.githubusercontent.com/1510147/129160013-d5c895d3-92aa-4a32-9a62-d09807f623f9.png">
-<img width="1371" alt="Screenshot 2021-08-12 at 10 57 15" src="https://user-images.githubusercontent.com/1510147/129160023-8095c1b5-d6ce-4813-b708-af1b16605160.png">
+## Funcionalidades Implementadas
 
-You can come up with whatever structure of the database tables you want, but please try to use all the Laravel features listed below.
+- Autenticação com Laravel Breeze
+- Operações CRUD 
+- Validação de Dados
+- Envio de E-mails
+- Permissões e Funções
+- Manipulação de Relacionamentos Eloquent
+- Paginação
+- Seeders e Factories
+
+## Pré-requisitos
+
+- PHP >= 7.4
+- Composer
+- MySQL ou outro banco de dados compatível
+- Node.js e NPM (para compilação de assets)
+
+## Instalação
+
+Siga os passos abaixo para configurar e rodar o projeto localmente:
+
+1. Clone o repositório:
+    
+```bash
+$ git clone 
+$ cd seu-repositorio
+
+```
+    
+2. Instale as dependências do PHP e do Node.js:
+    
+```bash
+$ composer install
+$ npm install
+$ npm run dev
+
+```
+    
+3. Configure o arquivo `.env`:
+    
+```bash
+$ cp .env.example .env
+$ php artisan key:generate
+
+```
+    
+4. Configure as variáveis de ambiente no arquivo `.env`, como conexão com o banco de dados e outras configurações necessárias.
+5. Execute as migrações e os seeders:
+    
+```bash
+$ php artisan migrate --seed
+
+```
+    
+6. Inicie o servidor de desenvolvimento:
+    
+```bash
+$ php artisan serve
+
+```
+    
+
+## Como Usar
+
+1. Acesse a aplicação em seu navegador através do endereço:
+    
+```bash
+$ http://localhost:8000
+
+```
+    
+2. Faça login com as credenciais de um usuário criado pelos seeders, a senha padrão para todos eles é password.
+3. Explore as funcionalidades implementadas, como criação, edição e exclusão de registros, gerenciamento de usuários e permissões, etc.
+
+```bash
+$ npm install && npm run dev
+$ npm install && npm run watch
+```
 
 
+## Construído com
 
------
-
-## Features to implement
-
-Here's the [list of Roadmap features](https://github.com/LaravelDaily/Laravel-Roadmap-Learning-Path#beginner-level) you need to try to implement in your code:
-
-
-**Routing Advanced**	
-
-- Route Model Binding	in Resource Controllers
-- Route Redirect - homepage should automatically redirect to the login form
-
-
-**Database Advanced**
-
-- Database Seeders and Factories - to automatically create first clients/projects/tasks and default users
-- Eloquent Query Scopes - show only active clients, for example
-- Polymorphic relationships	with [Spatie Media Library package](https://github.com/spatie/laravel-medialibrary)
-- Eloquent Accessors and Mutators	- view all date values in `m/d/Y` format
-- Soft Deletes on any Eloquent models
-
-
-**Auth Advanced**	
-
-- Authorization: Roles/Permissions (admin and simple users), Gates, Policies with [Spatie Permissions package](https://github.com/spatie/laravel-permission)
-- Authentication: Email Verification	
-
-
-**API Basics**	
-
-- API Routes and Controllers	
-- API Eloquent Resources	
-- API Auth with Sanctum	
-- Override API Error Handling and Status Codes	
-
-
-**Debugging Errors**	
-
-- Try-Catch and Laravel Exceptions	
-- Customizing Error Pages
-
-
-**Sending Email**
-
-- Mailables and Mail Facade	
-- Notifications System: Email
-
-
-**Extra**
-
-- Automated Tests for CRUD Operations
-
-
------ 
-
-## Example Solution
-
-If you need help, or you want to compare your version with our simple version, here's [the public repository](https://github.com/LaravelDaily/Laravel-Roadmap-Advanced-Beginner-Roadmap) with a _possible_ solution.
-
-**Notice**: please look at that repository only AFTER you've accomplished the task yourself, or if you're confident about your Laravel Advanced Beginner skills and you think you don't need to practice this task.
+-   [Laravel 10](https://laravel.com/docs/9.x/)
+-   [MySQL](https://dev.mysql.com/doc/)
+-   [Laratrust](https://github.com/santigarcor/laratrust)
+-   [Faker](https://github.com/fzaninotto/Faker)
+-   [Laravel Breeze](https://github.com/laravel/breeze)
+-   [Laravel Cascade SoftDeletes](https://github.com/michaeldyrynda/laravel-cascade-soft-deletes)
